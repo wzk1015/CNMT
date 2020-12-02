@@ -26,8 +26,6 @@ Note that installing `pycocoevalcap` is required for evaluating off-line. To ins
 
 ## Data Preparation
 
-Please refer to **M4C-Captioner[2]'s Github repository** to download open-source data of TextCaps dataset, and extract them under `data` directory, including:
-
 The following is open-source data of TextCaps dataset from [M4C-Captioner's Github repository](https://github.com/ronghanghu/pythia/tree/project/m4c_captioner_pre_release/projects/M4C_Captioner). Please download them from the links below and and extract them under `data` directory.
 
 *  [object Faster R-CNN Features of TextCaps](https://dl.fbaipublicfiles.com/pythia/features/open_images.tar.gz)
@@ -70,7 +68,7 @@ We provide an example script for training on TextCaps dataset for 12000 iteratio
 
 This may take approximately 13 hours, depending on GPU devices. Please refer to our paper for implementation details.
 
-First-time training will download `fasttext` model . You may also download it manually and put it under `pythia/.vector_cache`.
+First-time training will download `fasttext` model . You may also download it manually and put it under `pythia/.vector_cache/`.
 
 During training, log file can be found under `save/cnmt/m4c_textcaps_cnmt/logs/`. You may also run training in background using `nohup` and check log file for training status.
 
