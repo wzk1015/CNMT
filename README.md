@@ -32,7 +32,7 @@ The following is open-source data of TextCaps dataset from [M4C-Captioner's Gith
 *   [OCR Faster R-CNN Features of TextCaps](https://dl.fbaipublicfiles.com/pythia/m4c/data/m4c_textvqa_ocr_en_frcn_features.tar.gz)
 *  [detectron weights of TextCaps](http://dl.fbaipublicfiles.com/pythia/data/detectron_weights.tar.gz)
 
-Our `imdb` files consist of new OCR tokens and recognition confidence extracted with pretrained OCR systems [CRAFT](https://github.com/clovaai/CRAFT-pytorch), [ABCNet](https://github.com/Yuliang-Liu/bezier_curve_text_spotting) and [four-stage STR](https://github.com/Yuliang-Liu/bezier_curve_text_spotting). The three imdb files should be downloaded from the links below and put under `data/imdb/`.
+Our `imdb` files include new OCR tokens and recognition confidence extracted with pretrained OCR systems ( [CRAFT](https://github.com/clovaai/CRAFT-pytorch), [ABCNet](https://github.com/Yuliang-Liu/bezier_curve_text_spotting) and [four-stage STR](https://github.com/Yuliang-Liu/bezier_curve_text_spotting)). The three imdb files should be downloaded from the links below and put under `data/imdb/`.
 
 * [imdb_train.npy](https://drive.google.com/file/d/1EzF2WB81BTs2Bgt6kFdq2PTRlQl8EQ-y/view?usp=sharing)
 * [imdb_val_filtered_by_image_id.npy](https://drive.google.com/file/d/1FuqUGIsOqCkCqEGKIQAkc_08aMpjVJls/view?usp=sharing)
@@ -115,6 +115,7 @@ For test set evaluation, please submit the json file to the TextCaps EvalAI serv
 
 
 ## Citation
+
 ```
 @InProceedings{Wang_2021_AAAI,
   author = {Wang, Zhaokai and Bao, Renda and Wu, Qi and Liu, Si},
