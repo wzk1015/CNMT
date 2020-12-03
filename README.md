@@ -43,14 +43,14 @@ Finally, your `data` directory structure should look like this:
 
 ```shell
 data
-|-detectron							#download from links above
+|-detectron							
 |---...
-|-m4c_textvqa_ocr_en_frcn_features	#download from links above
+|-m4c_textvqa_ocr_en_frcn_features
 |---...
-|-open_images						#download from links above
+|-open_images						
 |---...
 |-vocab_textcap_threshold_10.txt 	#already provided
-|-imdb								#download from links above
+|-imdb								
 |---imdb_train.npy					
 |---imdb_val_filtered_by_image_id.npy	
 |---imdb_test_filtered_by_image_id.npy		

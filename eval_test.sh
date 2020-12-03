@@ -1,4 +1,4 @@
-python tools/run.py --tasks captioning --datasets m4c_textcaps --model cnmt \
+python -W ignore tools/run.py --tasks captioning --datasets m4c_textcaps --model cnmt \
 --config configs/cnmt_config.yml \
 --save_dir save/eval/ \
 --run_type inference --evalai_inference 1 \
