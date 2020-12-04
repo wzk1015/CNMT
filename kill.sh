@@ -1,0 +1,1 @@
+ps -ef|grep cnmt|awk '{print $2}'|xargs kill -9

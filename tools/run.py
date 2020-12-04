@@ -8,6 +8,8 @@ from pythia.utils.build_utils import build_trainer
 from pythia.utils.distributed_utils import is_main_process
 from pythia.utils.flags import flags
 
+import warnings
+warnings.filterwarnings("ignore")
 
 def setup_imports():
     # Automatically load all of the modules, so that
