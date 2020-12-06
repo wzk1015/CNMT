@@ -32,11 +32,15 @@ The following is open-source data of TextCaps dataset from [M4C-Captioner's Gith
 *   [OCR Faster R-CNN Features of TextCaps](https://dl.fbaipublicfiles.com/pythia/m4c/data/m4c_textvqa_ocr_en_frcn_features.tar.gz)
 *  [detectron weights of TextCaps](http://dl.fbaipublicfiles.com/pythia/data/detectron_weights.tar.gz)
 
-Our `imdb` files include new OCR tokens and recognition confidence extracted with pretrained OCR systems ( [CRAFT](https://github.com/clovaai/CRAFT-pytorch), [ABCNet](https://github.com/Yuliang-Liu/bezier_curve_text_spotting) and [four-stage STR](https://github.com/Yuliang-Liu/bezier_curve_text_spotting)). The three imdb files should be downloaded from the links below and put under `data/imdb/`.
+Our `imdb` files include new OCR tokens and recognition confidence extracted with pretrained OCR systems ( [CRAFT](https://github.com/clovaai/CRAFT-pytorch), [ABCNet](https://github.com/Yuliang-Liu/bezier_curve_text_spotting) and [four-stage STR](https://github.com/Yuliang-Liu/bezier_curve_text_spotting)). The three imdb files should be downloaded from the links below and **put under `data/imdb/`**.
 
-* [imdb_train.npy](https://drive.google.com/file/d/1EzF2WB81BTs2Bgt6kFdq2PTRlQl8EQ-y/view?usp=sharing)
-* [imdb_val_filtered_by_image_id.npy](https://drive.google.com/file/d/1FuqUGIsOqCkCqEGKIQAkc_08aMpjVJls/view?usp=sharing)
-* [imdb_test_filtered_by_image_id.npy](https://drive.google.com/file/d/1lu3aW0oTh6CO0_L64W9PE5UNW4_H7Cj2/view?usp=sharing)
+| file name                          | download link                                                |
+| ---------------------------------- | ------------------------------------------------------------ |
+| imdb_train.npy                     | [Google Drive](https://drive.google.com/file/d/1EzF2WB81BTs2Bgt6kFdq2PTRlQl8EQ-y/view?usp=sharing)  [Baidu Netdisk](https://pan.baidu.com/s/1pAg8oF1pTZEJ3g60G5O4bg)(password: sxbk) |
+| imdb_val_filtered_by_image_id.npy  | [Google Drive](https://drive.google.com/file/d/1FuqUGIsOqCkCqEGKIQAkc_08aMpjVJls/view?usp=sharing)  [Baidu Netdisk](https://pan.baidu.com/s/1Z2K3hhG21W5Vl3c75K50Iw)(password: i6pf) |
+| imdb_test_filtered_by_image_id.npy | [Google Drive](https://drive.google.com/file/d/1lu3aW0oTh6CO0_L64W9PE5UNW4_H7Cj2/view?usp=sharing)  [Baidu Netdisk](https://pan.baidu.com/s/1Wrp3HA0OgLyHMEzy_rUXmQ)(password: uxew) |
+
+
 
 
 Finally, your `data` directory structure should look like this:
@@ -55,6 +59,16 @@ data
 |---imdb_val_filtered_by_image_id.npy	
 |---imdb_test_filtered_by_image_id.npy		
 ```
+
+
+
+## Pretrained Model
+
+| download link                                                | description | val set CIDEr | test set CIDEr |
+| ------------------------------------------------------------ | ----------- | ------------- | -------------- |
+| [Google Drive](https://drive.google.com/file/d/1VfdvR12fPKNJnljjzSZ9lMIPw1Foa4WF/view?usp=sharing())  [Baidu Netdisk](https://pan.baidu.com/s/1ctuiob1whlgM7MimwlRiGg)(password: c4be) | CNMT best   | 101.6         | 93.0           |
+
+
 
 
 
