@@ -13,14 +13,7 @@ Our implementation is based on Pythia framework (now called [*mmf*](https://gith
 ```shell
 # install pythia based on requirements.txt
 python setup.py build develop  
-
-# install pycocoevalcap
-# use the repo below instead of https://github.com/tylin/coco-caption
-# note: you also need to have java on your machine
-pip install git+https://github.com/ronghanghu/coco-caption.git@python23
 ```
-
-Note that installing `pycocoevalcap` is required for evaluating off-line. To install `pycocoevalcap`,  java is needed.
 
 
 
@@ -84,7 +77,7 @@ This may take approximately 13 hours, depending on GPU devices. Please refer to 
 
 First-time training will download `fasttext` model . You may also download it manually and put it under `pythia/.vector_cache/`.
 
-During training, log file can be found under `save/cnmt/m4c_textcaps_cnmt/logs/`. You may also run training in background using `nohup` and check log file for training status.
+During training, log file can be found under `save/cnmt/m4c_textcaps_cnmt/logs/`. You may also run training in background and check log file for training status.
 
 
 
@@ -92,39 +85,16 @@ During training, log file can be found under `save/cnmt/m4c_textcaps_cnmt/logs/`
 
 Assume that checkpoint of the trained model is saved at `save/cnmt/m4c_textcaps_cnmt/best.ckpt` (otherwise modify the `resume_file` parameter in the shell script).
 
-### Validation set
-
-Run the following script to generate prediction json fils for TextCaps validation set:
+Run the following script to generate prediction json file:
 
 ```shell
-./eval_val.sh
-```
-
-The prediction file will be saved under `save/eval/m4c_textcaps_cnmt/reports/`.
-
-**Evaluate the prediction file**
-
-*  evaluate with `./textcaps_eval.py`. (**pycocoeval** is required)  For example:
-
-```
-python textcaps_eval.py --set val --pred_file YOUR_VAL_PREDICTION_FILE
-```
-
-*  Or, you can submit the json file to the TextCaps EvalAI server for result.
-
-### Test set
-
-Run the following script to generate prediction json file for TextCaps test set:
-
-```shell
+#evaluate on validation set
+./eval_val.sh 
+#evaluate on test set
 ./eval_test.sh
 ```
 
-The prediction file will be saved under `save/eval/m4c_textcaps_cnmt/reports/`.
-
-For test set evaluation, please submit the json file to the TextCaps EvalAI server.
-
-
+The prediction json file will be saved under `save/eval/m4c_textcaps_cnmt/reports/`. You can submit the json file to the TextCaps EvalAI server for result.
 
 
 
