@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Code for our AAAI 2021 paper *Confidence-aware Non-repetitive Multimodal Transformers for TextCaps*.
+Code for our AAAI 2021 paper *Confidence-aware Non-repetitive Multimodal Transformers for TextCaps* [[PDF]](https://arxiv.org/pdf/2012.03662.pdf).
 
 
 
@@ -101,11 +101,11 @@ The prediction json file will be saved under `save/eval/m4c_textcaps_cnmt/report
 ## Citation
 
 ```
-@InProceedings{Wang_2021_AAAI,
-  author = {Wang, Zhaokai and Bao, Renda and Wu, Qi and Liu, Si},
-  title = {Confidence-aware Non-repetitive Multimodal Transformers for TextCaps},
-  booktitle = {AAAI Conference on Artificial Intelligence (AAAI)},
-  year = {2021}
+@article{wang2020confidenceaware,
+  title={Confidence-aware Non-repetitive Multimodal Transformers for TextCaps}, 
+  author={Wang, Zhaokai and Bao, Renda and Wu, Qi and Liu, Si},
+  year={2020},
+  journal={arXiv preprint arXiv:2012.03662},
 }
 ```
 
